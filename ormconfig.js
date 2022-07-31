@@ -4,5 +4,8 @@ module.exports ={
   "host": process.env.ORM_HOST,
   "username": process.env.ORM_USERNAME,
   "password": process.env.ORM_PASSWORD,
-  "database": "rentx"
+  "database": "rentx",
+  "cli": {
+    "migrationsDir": "./src/database/migrations"
+  }
 }
