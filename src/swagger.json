@@ -73,6 +73,22 @@
         }
       }
     },
+    "/categories/import": {
+      "post": {
+        "tags": ["Category"],
+        "summary": "Upload a new category",
+        "description": "Upload a new category",
+        "requestBody": {
+          "content": {
+            "application/octet-stream": {
+              "schema": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
     "/specifications": {
       "post": {
         "tags": ["Specifications"],
@@ -80,11 +96,9 @@
         "description": "Create a new specification",
         "requestBody": {
           "content": {
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/definitions/Specification"
-                }
+            "application/json": {
+              "schema": {
+                "$ref": "#/definitions/Specification"
               }
             }
           }
