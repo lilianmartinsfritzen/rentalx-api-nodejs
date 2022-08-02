@@ -11,9 +11,6 @@ class User {
   name: string
 
   @Column()
-  username: string
-
-  @Column()
   email: string
 
   @Column()
@@ -27,7 +24,7 @@ class User {
 
   @CreateDateColumn()
   created_at: Date
-  
+
   constructor() {
     if (!this.id) {
       this.id = v4()
