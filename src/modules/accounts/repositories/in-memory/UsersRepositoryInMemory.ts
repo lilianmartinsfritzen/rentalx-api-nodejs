@@ -30,3 +30,5 @@ class UsersRepositoryInMemory implements IUsersRepository {
     return this.users.find((user) => user.id === id)
   }
 }
+
+export { UsersRepositoryInMemory }
