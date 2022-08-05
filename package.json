@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules --respawn src/server.ts",
-    "test": "jest",
+    "test": "jest --watch-All",
     "typeorm": "ts-node-dev ./node_modules/typeorm/cli"
   },
   "keywords": [],
