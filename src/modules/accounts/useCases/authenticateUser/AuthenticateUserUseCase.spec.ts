@@ -40,4 +40,22 @@ describe('Authenticate User', () => {
       })
     }).rejects.toBeInstanceOf(AppError)
   })
+
+  it('should not be able to authenticate with incorrect password', () => {
+    expect(async () => {
+      const user: ICreateUserDTO = {
+        name: 'User Test Correct Password',
+        email: 'user@test.com',
+        password: '654321',
+        driver_license: '999999'
+      }
+
+      await createUserUseCase.execute(user)
+
+      await authenticateUserUseCase.execute({
+        email: user.email,
+        password: 'incorrectPassword'
+      })
+    }).rejects.toBeInstanceOf(AppError)
+  })
 })
