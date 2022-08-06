@@ -2,15 +2,15 @@ import express, { NextFunction, Request, Response } from 'express'
 import 'express-async-errors'
 import 'dotenv/config'
 import swaggerUi from 'swagger-ui-express'
-import swaggerDocument from './swagger.json'
+import swaggerDocument from '../../../swagger.json'
 
-import './database'
+import '../typeorm'
 
-import './shared/container'
+import '../../container'
 
+import swaggerFile from '../../../swagger.json'
 import { router } from './routes'
-import swaggerFile from './swagger.json'
-import { AppError } from './errors/AppError'
+import { AppError } from '../../errors/AppError'
 
 const app = express()
 
