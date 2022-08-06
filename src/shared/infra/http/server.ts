@@ -4,9 +4,9 @@ import 'dotenv/config'
 import swaggerUi from 'swagger-ui-express'
 import swaggerDocument from '../../../swagger.json'
 
-import './shared/infra/typeorm'
+import '../typeorm'
 
-import './shared/container'
+import '../../container'
 
 import swaggerFile from '../../../swagger.json'
 import { router } from './routes'
