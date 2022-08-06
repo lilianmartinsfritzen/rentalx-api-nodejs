@@ -7,8 +7,6 @@ jspm_packages/
 .env.test
 .env.production
 
-diagrama.png
-
 # Coverage directory used by tools like istanbul
 coverage
 *.lcov
