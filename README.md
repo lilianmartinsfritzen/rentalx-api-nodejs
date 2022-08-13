@@ -2,7 +2,6 @@
 
 **Requisitos Funcionais**
 Deve ser possível cadastrar um carro.
-Deve ser possível listar todas as categorias.
 
 **Regras de Negócios**
 Não deve ser possível cadastrar um carro com uma placa já existente.
